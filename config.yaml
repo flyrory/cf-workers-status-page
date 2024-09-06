@@ -39,3 +39,19 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+  - id: chat-chjgo-com # unique identifier
+    name: chat.chjgo.com
+    description: 'You write code. They handle the rest.' # default=empty
+    url: 'https://chat.chjgo.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+  - id: lobe-chjgo-com # unique identifier
+    name: lobe.chjgo.com
+    description: 'You write code. They handle the rest.' # default=empty
+    url: 'https://lobe.chjgo.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
