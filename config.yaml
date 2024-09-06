@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'Chjgo.com Status Page'
   url: 'https://status.chjgo.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -19,6 +19,22 @@ monitors:
     name: chjgo.com
     description: 'You write code. They handle the rest.' # default=empty
     url: 'https://chjgo.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+  - id: ftp-chjgo-com # unique identifier
+    name: ftp.chjgo.com
+    description: 'You write code. They handle the rest.' # default=empty
+    url: 'https://ftp.chjgo.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+  - id: linux-chjgo-com # unique identifier
+    name: linux.chjgo.com
+    description: 'You write code. They handle the rest.' # default=empty
+    url: 'https://linux.chjgo.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
